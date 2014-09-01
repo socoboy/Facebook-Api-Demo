@@ -19,6 +19,8 @@
 		D68697D619B49ABD0004F3DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D68697BE19B49ABD0004F3DC /* UIKit.framework */; };
 		D68697DE19B49ABD0004F3DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D68697DC19B49ABD0004F3DC /* InfoPlist.strings */; };
 		D68697E019B49ABD0004F3DC /* FbAPIDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D68697DF19B49ABD0004F3DC /* FbAPIDemoTests.m */; };
+		D68697F019B49B070004F3DC /* FADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D68697EE19B49B070004F3DC /* FADViewController.m */; };
+		D68697F119B49B070004F3DC /* FADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D68697EF19B49B070004F3DC /* FADViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		D68697DB19B49ABD0004F3DC /* FbAPIDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FbAPIDemoTests-Info.plist"; sourceTree = "<group>"; };
 		D68697DD19B49ABD0004F3DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D68697DF19B49ABD0004F3DC /* FbAPIDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FbAPIDemoTests.m; sourceTree = "<group>"; };
+		D68697ED19B49B070004F3DC /* FADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FADViewController.h; sourceTree = "<group>"; };
+		D68697EE19B49B070004F3DC /* FADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FADViewController.m; sourceTree = "<group>"; };
+		D68697EF19B49B070004F3DC /* FADViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FADViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +112,7 @@
 		D68697C019B49ABD0004F3DC /* FbAPIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D68697EC19B49AEA0004F3DC /* ViewControllers */,
 				D68697C919B49ABD0004F3DC /* FADAppDelegate.h */,
 				D68697CA19B49ABD0004F3DC /* FADAppDelegate.m */,
 				D68697CC19B49ABD0004F3DC /* Images.xcassets */,
@@ -142,6 +148,16 @@
 				D68697DC19B49ABD0004F3DC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D68697EC19B49AEA0004F3DC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D68697ED19B49B070004F3DC /* FADViewController.h */,
+				D68697EE19B49B070004F3DC /* FADViewController.m */,
+				D68697EF19B49B070004F3DC /* FADViewController.xib */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D68697C519B49ABD0004F3DC /* InfoPlist.strings in Resources */,
+				D68697F119B49B070004F3DC /* FADViewController.xib in Resources */,
 				D68697CD19B49ABD0004F3DC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D68697CB19B49ABD0004F3DC /* FADAppDelegate.m in Sources */,
+				D68697F019B49B070004F3DC /* FADViewController.m in Sources */,
 				D68697C719B49ABD0004F3DC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

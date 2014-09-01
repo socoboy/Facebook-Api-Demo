@@ -7,6 +7,7 @@
 //
 
 #import "FADAppDelegate.h"
+#import "FADViewController.h"
 
 @implementation FADAppDelegate
 
@@ -14,6 +15,11 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    FADViewController *mainViewController = [[FADViewController alloc] initWithNibName:nil bundle:nil];
+    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:mainViewController];
+    
+    self.window.rootViewController = nvc;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
