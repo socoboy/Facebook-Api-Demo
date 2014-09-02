@@ -17,6 +17,7 @@
     // Override point for customization after application launch.
     FADViewController *mainViewController = [[FADViewController alloc] initWithNibName:nil bundle:nil];
     UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:mainViewController];
+    nvc.navigationBar.translucent = NO;
     
     self.window.rootViewController = nvc;
     

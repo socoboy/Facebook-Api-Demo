@@ -7,10 +7,11 @@
 //
 
 #import "FADViewController.h"
+#import <FacebookSDK/FacebookSDK.h>
 
 @interface FADViewController ()
 
-- (IBAction)demoLoginAction:(id)sender;
+- (IBAction)bundleIdAction:(id)sender;
 
 @end
 
@@ -29,6 +30,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [FBLoginView class];
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,7 +40,14 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)demoLoginAction:(id)sender {
-    
+- (IBAction)bundleIdAction:(id)sender {
+    UIAlertView *dialog = [[UIAlertView alloc] initWithTitle:@""
+                                                     message:[NSString stringWithFormat:@"Your app's Bundle ID: %@", [[NSBundle mainBundle] bundleIdentifier]]
+                                                    delegate:nil
+                                           cancelButtonTitle:@"OK"
+                                           otherButtonTitles:nil];
+    [dialog show];
 }
+
+
 @end

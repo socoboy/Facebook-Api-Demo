@@ -21,6 +21,7 @@
 		D68697E019B49ABD0004F3DC /* FbAPIDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D68697DF19B49ABD0004F3DC /* FbAPIDemoTests.m */; };
 		D68697F019B49B070004F3DC /* FADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D68697EE19B49B070004F3DC /* FADViewController.m */; };
 		D68697F119B49B070004F3DC /* FADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D68697EF19B49B070004F3DC /* FADViewController.xib */; };
+		D68697F319B4BF8C0004F3DC /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D68697F219B4BF8C0004F3DC /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		D68697ED19B49B070004F3DC /* FADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FADViewController.h; sourceTree = "<group>"; };
 		D68697EE19B49B070004F3DC /* FADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FADViewController.m; sourceTree = "<group>"; };
 		D68697EF19B49B070004F3DC /* FADViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FADViewController.xib; sourceTree = "<group>"; };
+		D68697F219B4BF8C0004F3DC /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D68697BD19B49ABD0004F3DC /* CoreGraphics.framework in Frameworks */,
+				D68697F319B4BF8C0004F3DC /* FacebookSDK.framework in Frameworks */,
 				D68697BF19B49ABD0004F3DC /* UIKit.framework in Frameworks */,
 				D68697BB19B49ABD0004F3DC /* Foundation.framework in Frameworks */,
 			);
@@ -101,6 +104,7 @@
 		D68697B919B49ABD0004F3DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D68697F219B4BF8C0004F3DC /* FacebookSDK.framework */,
 				D68697BA19B49ABD0004F3DC /* Foundation.framework */,
 				D68697BC19B49ABD0004F3DC /* CoreGraphics.framework */,
 				D68697BE19B49ABD0004F3DC /* UIKit.framework */,
@@ -378,6 +382,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FbAPIDemo/FbAPIDemo-Prefix.pch";
 				INFOPLIST_FILE = "FbAPIDemo/FbAPIDemo-Info.plist";
@@ -391,6 +399,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FbAPIDemo/FbAPIDemo-Prefix.pch";
 				INFOPLIST_FILE = "FbAPIDemo/FbAPIDemo-Info.plist";
@@ -458,6 +470,7 @@
 				D68697E519B49ABD0004F3DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D68697E619B49ABD0004F3DC /* Build configuration list for PBXNativeTarget "FbAPIDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +479,7 @@
 				D68697E819B49ABD0004F3DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

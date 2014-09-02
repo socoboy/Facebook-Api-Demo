@@ -11,27 +11,36 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYY-K0-rru">
-                    <rect key="frame" x="119" y="45" width="83" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8H-2y-ozA">
+                    <rect key="frame" x="126" y="74" width="68" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <state key="normal" title="Demo Login">
+                    <state key="normal" title="Bundle ID">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="demoLoginAction:" destination="-1" eventType="touchUpInside" id="5Hr-lZ-AMX"/>
+                        <action selector="bundleIdAction:" destination="-1" eventType="touchUpInside" id="ruq-9N-14w"/>
                     </connections>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1OU-rb-Zu6" customClass="FBLoginView">
+                    <rect key="frame" x="47" y="17" width="226" height="49"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="iay-aw-K6s"/>
+                        <constraint firstAttribute="width" constant="226" id="xvl-uP-01Q"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="centerY" secondItem="KYY-K0-rru" secondAttribute="centerY" constant="224" id="LJf-l6-eL7"/>
-                <constraint firstAttribute="centerX" secondItem="KYY-K0-rru" secondAttribute="centerX" constant="-0.5" id="mBS-Ug-WsA"/>
+                <constraint firstItem="1OU-rb-Zu6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="17" id="kcv-Ie-tot"/>
+                <constraint firstAttribute="centerX" secondItem="1OU-rb-Zu6" secondAttribute="centerX" id="pLC-Sm-1tg"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
